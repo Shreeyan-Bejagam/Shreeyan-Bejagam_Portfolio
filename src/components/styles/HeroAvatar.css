@@ -1,0 +1,43 @@
+.hero-avatar {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: min(620px, calc(100% - 40px));
+  height: min(80vh, 760px);
+  display: grid;
+  place-items: end center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.hero-avatar-rim {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  border-radius: 999px;
+  filter: blur(55px);
+  opacity: 0.55;
+  background: radial-gradient(circle at 30% 30%, #9a5cff, transparent 55%),
+    radial-gradient(circle at 70% 60%, #36e4ff, transparent 60%);
+  transform: translateY(120px) scale(1.1);
+}
+
+.hero-avatar-img {
+  width: min(520px, 100%);
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 18px;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.55));
+}
+
+@media screen and (min-width: 1025px) {
+  .hero-avatar {
+    position: fixed;
+    height: 100vh;
+    bottom: 0;
+    z-index: 11;
+  }
+}
+

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 640" width="520" height="640" role="img" aria-label="Portrait placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14141c"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+    <radialGradient id="glowT" cx="28%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#36e4ff" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#36e4ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowP" cx="78%" cy="72%" r="50%">
+      <stop offset="0%" stop-color="#9a5cff" stop-opacity="0.5"/>
+      <stop offset="65%" stop-color="#9a5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sil" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#e8eef8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#e8eef8" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="640" rx="18" fill="url(#bg)"/>
+  <rect width="520" height="640" rx="18" fill="url(#glowT)"/>
+  <rect width="520" height="640" rx="18" fill="url(#glowP)"/>
+  <!-- subtle silhouette -->
+  <ellipse cx="260" cy="248" rx="88" ry="96" fill="url(#sil)"/>
+  <path fill="url(#sil)" d="M120 520c0-88 62.8-152 140-152s140 64 140 152v120H120V520z"/>
+</svg>
